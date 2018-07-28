@@ -27,10 +27,14 @@ class Single extends Component {
         <Section i={i} section={section} {...this.props} />
         <Items postItems={postItems} {...this.props} />
         <form ref="itemForm" className="item-form" onSubmit={this.handleSubmit}>
-          <input type="text" ref="name" placeholder="name"/>
-          <input type="text" ref="description" placeholder="description"/>
-          <input type="number" ref="count" placeholder="count"/>
-          <input type="submit" hidden />
+          <span className="itemLabel">Name</span>
+          <input type="text" ref="name" placeholder="Name" />
+          <span className="itemLabel">Description</span>
+          <textarea ref="description" placeholder="Description" />
+          <span className="itemLabel">Count</span>
+          <input type="number" ref="count" placeholder="Count" />
+          <br />
+          <input type="submit" className="submitBtn" />
         </form>
       </div>
     )
