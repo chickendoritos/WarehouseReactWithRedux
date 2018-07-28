@@ -23,10 +23,10 @@ class Single extends Component {
     const postItems = this.props.items[sectionId] || [];
     //console.log(postItems);
     return (
-      <div className="single-photo">
+      <div>
         <Section i={i} section={section} {...this.props} />
         <Items postItems={postItems} {...this.props} />
-        <form ref="itemForm" className="item-form" onSubmit={this.handleSubmit}>
+        <form ref="itemForm" className="item-form box" onSubmit={this.handleSubmit}>
           <span className="itemLabel">Name</span>
           <input type="text" ref="name" placeholder="Name" />
           <span className="itemLabel">Description</span>
