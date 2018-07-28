@@ -1,8 +1,13 @@
 // increment
-export function updateCountOfItem(index) {
+export function updateItem(sectionId, index, name, description, count) {
+      console.log(name);
     return {
-      type: 'UPDATE_ITEM_COUNT',
-      index
+      type: 'UPDATE_ITEM',
+      sectionId,
+      index,
+      name,
+      description,
+      count
     }
   }
   

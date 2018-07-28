@@ -13,13 +13,13 @@ import store, { history } from './store';
 
 const router = (
   <Provider store={store}>
-  <Router history={history}>
-    <Route path="/" component={App}>
-      <IndexRoute component={SectionGrid}></IndexRoute>
-      <Route path="/view/:sectionId" component={Single}></Route>
-    </Route>
-  </Router>
-</Provider>
+    <Router history={history}>
+      <Route path="/" component={App}>
+        <IndexRoute component={SectionGrid}></IndexRoute>
+        <Route path="/view/:sectionId" component={Single}></Route>
+      </Route>
+    </Router>
+  </Provider>
 )
 
 render(router, document.getElementById('root'));

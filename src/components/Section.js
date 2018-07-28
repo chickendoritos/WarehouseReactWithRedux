@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 class Section extends Component {
   render() {
     const { section, i, items } = this.props;
-    console.log(this.props);
+    //console.log(this.props);
     //console.log(items[section.code].length);
     return (
       <figure className="grid-figure">
