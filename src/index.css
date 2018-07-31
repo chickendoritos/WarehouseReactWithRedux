@@ -95,3 +95,16 @@ textarea {
 .item-form {
   width: 325px;
 }
+
+.sectionBox {
+  margin-left: 0;
+}
+
+.sectionTitle a {
+  font-size: 24px;
+  text-decoration: unset;
+}
+
+.appTitle a {
+  text-decoration: unset;
+}

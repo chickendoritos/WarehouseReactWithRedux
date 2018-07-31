@@ -8,12 +8,13 @@ class Section extends Component {
     //console.log(this.props);
     //console.log(items[section.code].length);
     return (
-      <figure className="box">
+      <figure className="box sectionBox">
         <div>
-          <Link to={`/view/${section.code}`}>
-            {section.name}
-          </Link>
-          <br />
+          <h2 className="sectionTitle">
+            <Link to={`/view/${section.code}`}>
+              {section.name}
+            </Link>
+          </h2>
           {section.types}
         </div>
  
