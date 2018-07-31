@@ -6,7 +6,7 @@ class Main extends Component {
       return (
         <div>
           <h1 className="appTitle">
-            <Link to="/">My App</Link>
+            <Link to="/">Warehouse App</Link>
           </h1>
           {React.cloneElement({...this.props}.children, {...this.props})}
         </div>
